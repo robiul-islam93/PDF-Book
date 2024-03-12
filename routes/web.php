@@ -22,7 +22,7 @@ Route::post('/reset-password',[UserController::class,'ResetPassword'])->middlewa
 
 
 Route::get('/book-pdf',[PDFBOOKController::class,'PDFBook']);
-
+Route::get('/book-content-view',[PDFBOOKController::class,'PDFPrintBook']);
 
 
 // Report
