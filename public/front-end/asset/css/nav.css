@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.nav-link{
+    font-size: 13px;
+}
+.nav-link i{
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.nav-item .nav-link  a{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    display: block;
+   
+    border-bottom: 1px solid #ddd;
+    border-radius: 1px;
+    position: relative;
+    transition: all 0.4s ease;
+}
+.nav-item .nav-link  a:hover{
+    opacity: 0.7;
+    border-bottom: 1px solid black !important; 
+}
+.nav-item .nav-link {
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.4s ease;
+}       
+.nav-item .nav-link:hover{
+    border-bottom-color: #000;
+}
+
+/* side-nav */
+.sidenav {
+    height: 100%;
+    width: 400px;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    background-color: #474747;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    
+    
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #9b9a9a;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    font-size: 36px;
+    margin-left: 50px;
+    z-index: 1;
+    
+    color: #ddd !important;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  /* overview */
+  .modal-dialog{
+    overflow-y: scroll;
+  }
+  .overview-main{
+    padding: 20px 20px;
+  }
+  .card{
+    width: 100%;
+    height: 200px;
+    
+  }
+  .card img{
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .card span{
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    padding: 8px 15px;
+    background-color: #474747;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+   
+  }
