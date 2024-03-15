@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{asset('front-end/asset/css/nav.css')}}">
     <link rel="stylesheet" href="{{asset('front-end/asset/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('front-end/asset/css/lightbox.css')}}">
     <!-- Font awesome -->
 
     <!-- boostrap---link -->
@@ -38,7 +39,14 @@
 
 <body>
 
-
+  <div id="preloader">
+    <svg class="pl" width="240" height="240" viewBox="0 0 240 240">
+        <circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round"></circle>
+        <circle class="pl__ring pl__ring--b" cx="120" cy="120" r="35" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 220" stroke-dashoffset="-110" stroke-linecap="round"></circle>
+        <circle class="pl__ring pl__ring--c" cx="85" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+        <circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+    </svg>
+  </div>
 
 
 @yield('content')
@@ -50,6 +58,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="{{asset('front-end/asset/js/nav.js')}}"></script>
     <script src="{{asset('front-end/asset/js/script.js')}}"></script>
+    <script src="{{asset('front-end/asset/js/lightbox-plus-jquery.js')}}"></script>
 
     <script>
         // Trigger click event on the next button to show page 2 by default

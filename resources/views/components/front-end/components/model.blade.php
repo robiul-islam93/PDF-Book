@@ -1,75 +1,79 @@
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-  aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog  modal-xl">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">Overview</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
 
-          <div class="overview-main">
-              <div class="row">
-                  <div class="col-lg-2">
-                      <a href="#">
-                          <div class="card">
-                              <img src="./image/paper.jpg" alt="">
-                              <span>1</span>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="col-lg-2">
-                      <a href="#">
-                          <div class="card">
-                              <img src="{{asset('front-end/asset/image/paper.jpg')}}" alt="">
-                              <span>1</span>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="col-lg-2">
-                      <a href="#">
-                          <div class="card">
-                              <img src="{{asset('front-end/asset/image/paper.jpg')}}" alt="">
-                              <span>1</span>
-                          </div>
-
-                      </a>
-                  </div>
-                  <div class="col-lg-2">
-                      <a href="#">
-                          <div class="card">
-                              <img src="{{asset('front-end/asset/image/read-pepar.jpg')}}" alt="">
-                              <span>1</span>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="col-lg-2">
-                      <a href="#">
-                          <div class="card">
-                              <img src="{{asset('front-end/asset/image/read-pepar.jpg')}}" alt="">
-                              <span>1</span>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="col-lg-2">
-                      <a href="#">
-                          <div class="card">
-                              <img src="{{asset('front-end/asset/image/read-pepar.jpg')}}" alt="">
-                              <span>1</span>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="col-lg-2">
-                      <a href="#">
-                          <div class="card">
-                              <img src="{{asset('front-end/asset/image/read-pepar.jpg')}}" alt="">
-                              <span>1</span>
-                          </div>
-                      </a>
-                  </div>
-              </div>
-
-          </div>
-      </div>
-  </div>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdropover" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Overview</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="overview-main">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="product_menu_content">
+                            <div class="product_menu_tab_content active">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="institution_gallery_content_img mt-3">
+                                            <a>
+                                                <img src="{{asset('read-pepar.jpg')}}" alt="">
+                                            </a>
+                                            <div class="institution_gallery_content_img_overlay">
+                                                <h2>Book Details</h2>
+                                                <div class="overlay_btn">
+                                                    <a href="{{asset('read-pepar.jpg')}}" data-lightbox="models"
+                                                        data-title="Page-1">
+                                                        <svg width="38" height="26" viewBox="0 0 38 26" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M19 26C6.14822 26 0.356994 14.0065 0.118998 13.5032C-0.039666 13.1677 -0.039666 12.8323 0.118998 12.4968C0.356994 11.9935 6.14822 0 19 0C31.8518 0 37.643 11.9935 37.881 12.4968C38.0397 12.8323 38.0397 13.1677 37.881 13.5032C37.643 14.0903 31.8518 26 19 26ZM2.26095 13.0839C3.45093 15.2645 8.92484 23.8193 19 23.8193C29.0752 23.8193 34.5491 15.2645 35.739 13.0839C34.5491 10.9032 29.0752 2.3484 19 2.3484C8.92484 2.3484 3.45093 10.9032 2.26095 13.0839Z"
+                                                                fill="#002C53" />
+                                                            <path
+                                                                d="M18.9997 23.6516C13.4465 23.6516 9.00391 18.871 9.00391 13.0839C9.00391 7.29679 13.5258 2.51614 18.9997 2.51614C24.4736 2.51614 28.9956 7.29679 28.9956 13.0839C28.9956 18.871 24.553 23.6516 18.9997 23.6516ZM18.9997 4.69679C14.6365 4.69679 11.0665 8.47099 11.0665 13.0839C11.0665 17.6968 14.6365 21.471 18.9997 21.471C23.363 21.471 26.9329 17.6968 26.9329 13.0839C26.9329 8.47099 23.363 4.69679 18.9997 4.69679Z"
+                                                                fill="#002C53" />
+                                                            <path
+                                                                d="M19.0005 18.9548C15.9859 18.9548 13.4473 16.3548 13.4473 13.0839C13.4473 12.4968 13.9233 11.9936 14.4786 11.9936C15.0339 11.9936 15.5099 12.4968 15.5099 13.0839C15.5099 15.0968 17.0172 16.6903 18.9212 16.6903C20.8251 16.6903 22.3324 15.0968 22.3324 13.0839C22.3324 11.071 20.8251 9.47743 18.9212 9.47743C18.3658 9.47743 17.8899 8.97419 17.8899 8.3871C17.8899 7.8 18.3658 7.29678 18.9212 7.29678C21.9358 7.29678 24.4744 9.89678 24.4744 13.1678C24.4744 16.4387 22.0151 18.9548 19.0005 18.9548Z"
+                                                                fill="#002C53" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="institution_gallery_content_img mt-3">
+                                            <a>
+                                                <img src="{{asset('read-pepar.jpg')}}" alt="">
+                                            </a>
+                                            <div class="institution_gallery_content_img_overlay">
+                                                <h2>Book Details</h2>
+                                                <div class="overlay_btn">
+                                                    <a href="{{asset('read-pepar.jpg')}}" data-lightbox="models"
+                                                        data-title="Page-2">
+                                                        <svg width="30" height="18" viewBox="0 0 38 26" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M19 26C6.14822 26 0.356994 14.0065 0.118998 13.5032C-0.039666 13.1677 -0.039666 12.8323 0.118998 12.4968C0.356994 11.9935 6.14822 0 19 0C31.8518 0 37.643 11.9935 37.881 12.4968C38.0397 12.8323 38.0397 13.1677 37.881 13.5032C37.643 14.0903 31.8518 26 19 26ZM2.26095 13.0839C3.45093 15.2645 8.92484 23.8193 19 23.8193C29.0752 23.8193 34.5491 15.2645 35.739 13.0839C34.5491 10.9032 29.0752 2.3484 19 2.3484C8.92484 2.3484 3.45093 10.9032 2.26095 13.0839Z"
+                                                                fill="#002C53" />
+                                                            <path
+                                                                d="M18.9997 23.6516C13.4465 23.6516 9.00391 18.871 9.00391 13.0839C9.00391 7.29679 13.5258 2.51614 18.9997 2.51614C24.4736 2.51614 28.9956 7.29679 28.9956 13.0839C28.9956 18.871 24.553 23.6516 18.9997 23.6516ZM18.9997 4.69679C14.6365 4.69679 11.0665 8.47099 11.0665 13.0839C11.0665 17.6968 14.6365 21.471 18.9997 21.471C23.363 21.471 26.9329 17.6968 26.9329 13.0839C26.9329 8.47099 23.363 4.69679 18.9997 4.69679Z"
+                                                                fill="#002C53" />
+                                                            <path
+                                                                d="M19.0005 18.9548C15.9859 18.9548 13.4473 16.3548 13.4473 13.0839C13.4473 12.4968 13.9233 11.9936 14.4786 11.9936C15.0339 11.9936 15.5099 12.4968 15.5099 13.0839C15.5099 15.0968 17.0172 16.6903 18.9212 16.6903C20.8251 16.6903 22.3324 15.0968 22.3324 13.0839C22.3324 11.071 20.8251 9.47743 18.9212 9.47743C18.3658 9.47743 17.8899 8.97419 17.8899 8.3871C17.8899 7.8 18.3658 7.29678 18.9212 7.29678C21.9358 7.29678 24.4744 9.89678 24.4744 13.1678C24.4744 16.4387 22.0151 18.9548 19.0005 18.9548Z"
+                                                                fill="#002C53" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

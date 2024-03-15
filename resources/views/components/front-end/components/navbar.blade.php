@@ -30,11 +30,11 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#"><i
+                                class="fa-solid fa-magnifying-glass"></i>Search</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#"> <i
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdropover" href="#"> <i
                                 class="fa-solid fa-table-cells"></i>Overview</a>
                     </li>
                     <li class="nav-item">
@@ -46,8 +46,8 @@
                         <a class="nav-link" href="{{url('/book-content-view')}}" target="_blank"><i class="fas fa-print"></i> Print</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa-solid fa-share-nodes"></i>Share</a>
-
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdropshare" href="#"><i
+                                class="fa-solid fa-share-nodes"></i>Share</a>
 
                     </li>
                 
