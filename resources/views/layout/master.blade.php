@@ -74,48 +74,8 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     <script src="{{ asset('front-end/asset/js/script.js') }}"></script>
     <script src="{{ asset('front-end/asset/js/lightbox-plus-jquery.js') }}"></script>
 
-    <script>
-        // Trigger click event on the next button to show page 2 by default
-        document.addEventListener("DOMContentLoaded", function() {
-            var nextBtn = document.getElementById("next-btn");
-            nextBtn.click();
-        });
-    </script>
+ 
 
-
-    {{-- <script type="text/javascript">
-        function loadApp() {
-            // Create the flipbook
-            $('.flipbook').turn({
-                // Width
-                width: 603,
-                // Height
-                height: 500,
-                // Elevation
-                elevation: 50,
-                // Enable gradients
-                gradients: true,
-                // Auto center this flipbook
-                autoCenter: true,
-                start: 2 // Start the flipbook on page 1
-            });
-        }
-        $('#prevPage').on('click', function() {
-            flipbook.turn('previous');
-        });
-        // Event handler for next page button
-        $('#nextPage').on('click', function() {
-            flipbook.turn('next');
-        });
-        yepnope({
-            test: Modernizr.csstransforms,
-            yep: ["{{ asset('front-end/turn-js/lib/turn.js') }}"],
-            yep: ["{{ asset('front-end/turn-js/lib/turn.js') }}"],
-            nope: ["{{ asset('front-end/turn-js/lib/turn.html4.min.js') }}"],
-            both: ["{{ asset('front-end/turn-js/css/basic.css') }}"],
-            complete: loadApp
-        });
-    </script> --}}
 
     <script type="text/javascript">
 
@@ -128,7 +88,7 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
                     // Width
                     width: 603,
                     // Height
-                    height: 450,
+                    height: 440,
                     // Elevation
                     elevation: 50,
                     // Enable gradients
@@ -163,8 +123,7 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
     </script>
     
 
-
-
+        
 
 </body>
 

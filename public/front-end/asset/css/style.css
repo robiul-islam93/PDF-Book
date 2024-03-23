@@ -546,94 +546,6 @@ i {
     
 }
 
-.book #trsf {
-    background: url('../image/book.jpg');
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    
- object-fit: cover;
-    height: 100%;
-    background-size: 100% 100%;
-}
- .book #threethp{
-    background: url('../image/book.jpg');
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-   
- object-fit: cover;
-    height: 100%;
-    background-size: 100% 100%;
-}
-
-.book #fourp{
-    background: url('../image/book.jpg');
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-  
- object-fit: cover;
-    height: 100%;
-    background-size: 100% 100%;
-}
-
-.book #fivep{
-    background: url('../image/book.jpg');
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
- object-fit: cover;
-    height: 100%;
-    background-size: 100% 100%;
-
-}
-.book #sixp{
-    background: url('../image/book.jpg');
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
- object-fit: cover;
-    height: 100%;
-    background-size: 100% 100%;
-}
-.book #sevenp{
-    background: url('../image/book.jpg');
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
- object-fit: cover;
-    height: 100%;
-    background-size: 100% 100%;
-}
-#portada{
-	background: url('../image/book.jpg');
-}
-#portada-back{
-	background: url('../image/book.jpg');
-}
-#portada, #portada-back{
-	background-size: 100% 100%;
-}
-
-/* Clases que se agregaran con Javascript */
-
-.trnsf{
-	transform: translateX(80px);
-
-}
-.trnsf-reset{
-	transform: translateX(0px);
-}
-
-/* @media para hacer el texto responsivo */
-
-@media screen and (max-width: 800px){
-	p{
-		font-size: 12px;
-	}
-}
-
 
 
 /* Flip View Page Is Done start  */
@@ -669,14 +581,18 @@ i {
   cursor: pointer;
 }
 #prevPage {
+  height: 60px;
+  background: white;
+  display: inline-block;
   left: 0;
 }
 #nextPage {
-  right: 0;
+  height: 60px;
+  background: white;
+  display: inline-block;
+  right: 4%;
 }
 .flipbook img {
-  height: auto;
-  background: white;
   object-fit: contain; /* Maintain aspect ratio */
 }
 .hidden {

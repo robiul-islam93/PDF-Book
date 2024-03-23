@@ -44,7 +44,8 @@
     </div>
     
     <audio id="clickSound">
-        <source src="{{asset('front-end/asset/audio/flipcard-91468.mp3')}}" type="audio/mpeg">
+        <source src="{{asset('front-end/asset/audio/flipcard-91468.mp3')}}" type="audio/mpeg"> <!-- Adjust the source path -->
+
     </audio>
 
 
