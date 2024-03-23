@@ -2,6 +2,8 @@
 @section('title','Book Section')
 @section('content')
     @include('components.front-end.components.navbar')
+
+
     {{-- @include('components.front-end.page.book') --}}
 
 {{-- 
@@ -61,9 +63,7 @@
 
     </section> --}}
 
-    
-
-    <div class="containera" id="containera">
+    {{-- <div class="containera" id="containera">
         <div class="book-content">
 
             <div class="book">
@@ -86,6 +86,24 @@
                 <div class="face-front" id="sevenp"></div>
                 <div class="face-back" id="portada-back">
                 </div>
+            </div>
+        </div>
+    </div> --}}
+
+
+    <div class="flipbook-viewport">
+        <div class="container">
+            <div class="flipbook">
+                <div style="background-image:url({{asset('front-end/turn-js/samples/basic/pages/12.jpg')}})"></div>
+                <div style="background-image:url({{asset('front-end/turn-js/samples/basic/pages/12.jpg')}})"></div>
+                <div style="background-image:url({{asset('front-end/turn-js/samples/basic/pages/12.jpg')}})"></div>
+                <div style="background-image:url({{asset('front-end/turn-js/samples/basic/pages/12.jpg')}})"></div>
+                <div style="background-image:url({{asset('front-end/turn-js/samples/basic/pages/12.jpg')}})"></div>
+                <div style="background-image:url({{asset('front-end/turn-js/samples/basic/pages/12.jpg')}})"></div>
+                <div style="background-image:url({{asset('front-end/turn-js/samples/basic/pages/12.jpg')}})"></div>
+                <div style="background-image:url({{asset('front-end/turn-js/samples/basic/pages/12.jpg')}})"></div>
+                <div style="background-image:url({{asset('front-end/turn-js/samples/basic/pages/12.jpg')}})"></div>
+                <div style="background-image:url({{asset('front-end/turn-js/samples/basic/pages/12.jpg')}})"></div>
             </div>
         </div>
     </div>

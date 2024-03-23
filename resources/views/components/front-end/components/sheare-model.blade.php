@@ -11,7 +11,8 @@
                 </div>
                 <div class="modal-body">
                     <div class="share-social">
-                        <a href="#"> <i class="fa-brands fa-square-facebook"></i></a>
+                        {{-- {!! $shareButtons !!} --}}
+                        {{-- <a href="#"> <i class="fa-brands fa-square-facebook"></i></a>
                         <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
 
                         <a href="#"><i class="fa-brands fa-linkedin"></i> </a>
@@ -21,8 +22,7 @@
 
                         <a href="#"> <i class="fa-brands fa-skype"></i></a>
 
-
-                        <a href="#"><i class="fa-brands fa-square-whatsapp" style="color: #1dc320;"></i> </a>
+                        <a href="#"><i class="fa-brands fa-square-whatsapp" style="color: #1dc320;"></i> </a> --}}
                     </div>
 
                     <form action="#" class="share-form">

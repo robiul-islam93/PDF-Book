@@ -47,7 +47,8 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdropshare" href="#"><i
-                                class="fa-solid fa-share-nodes"></i>Share</a>
+                                class="fa-solid fa-share-nodes"></i>
+                                Share</a>
 
                     </li>
                 

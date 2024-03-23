@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\ReportController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\PDFBOOKController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ReportController;
+use App\Http\Controllers\SearchController;
+use App\Http\Controllers\PDFBOOKController;
 
 // User Web API Routes
 Route::post('/user-registration',[UserController::class,'UserRegistration']);
@@ -23,6 +24,7 @@ Route::post('/reset-password',[UserController::class,'ResetPassword'])->middlewa
 
 Route::get('/book-pdf',[PDFBOOKController::class,'PDFBook']);
 Route::get('/book-content-view',[PDFBOOKController::class,'PDFPrintBook']);
+Route::post('/search', [SearchController::class, 'search'])->name('search');
 
 
 // Report

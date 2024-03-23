@@ -7,10 +7,14 @@
     <title>SIMPLE MEGAMENU</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width = 1050, user-scalable = no" />
     <link rel="stylesheet" href="{{asset('front-end/asset/css/nav.css')}}">
     <link rel="stylesheet" href="{{asset('front-end/asset/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('front-end/asset/css/lightbox.css')}}">
     <!-- Font awesome -->
+
+    <script type="text/javascript" src="{{asset('front-end/turn-js/extras/jquery.min.1.7.js')}}"></script>
+<script type="text/javascript" src="{{asset('front-end/turn-js/extras/modernizr.2.5.3.min.js')}}"></script>
 
     <!-- boostrap---link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,6 +24,9 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <!-- boostrap---link -->
+
+    <script type="text/javascript" src="{{asset('front-end/turn-js/extras/jquery.min.1.7.js')}}"></script>
+    <script type="text/javascript" src="{{asset('front-end/turn-js/extras/modernizr.2.5.3.min.js')}}"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
@@ -39,14 +46,18 @@
 
 <body>
 
-  <div id="preloader">
-    <svg class="pl" width="240" height="240" viewBox="0 0 240 240">
-        <circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round"></circle>
-        <circle class="pl__ring pl__ring--b" cx="120" cy="120" r="35" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 220" stroke-dashoffset="-110" stroke-linecap="round"></circle>
-        <circle class="pl__ring pl__ring--c" cx="85" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
-        <circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
-    </svg>
+      <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
   </div>
+  <!-- ***** Preloader End ***** -->
 
 
 @yield('content')
@@ -67,6 +78,49 @@
             nextBtn.click();
         });
     </script>
+
+
+<script type="text/javascript">
+
+    function loadApp() {
+    
+        // Create the flipbook
+    
+        $('.flipbook').turn({
+                // Width
+    
+                width:900,
+                
+                // Height
+    
+                height:650,
+    
+                // Elevation
+    
+                elevation: 50,
+                
+                // Enable gradients
+    
+                gradients: true,
+                
+                // Auto center this flipbook
+    
+                autoCenter: true
+    
+        });
+    }
+
+    yepnope({
+        test : Modernizr.csstransforms,
+        yep: ["{{asset('front-end/turn-js/lib/turn.js')}}"],
+        yep: ["{{asset('front-end/turn-js/lib/turn.js')}}"],
+        nope: ["{{asset('front-end/turn-js/lib/turn.html4.min.js')}}"],
+        both: ["{{asset('front-end/turn-js/css/basic.css')}}"],
+        complete: loadApp
+    });
+    
+    </script>
+
 </body>
 
 </html>
