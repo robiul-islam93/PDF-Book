@@ -70,3 +70,19 @@ function copyText() {
 }
 
 //   sheare copy script end 
+
+
+// Filip Book Sound JS start 
+const prevBtn = document.querySelector("#prevPage");
+const nextBtn = document.querySelector("#nextPage");
+const clickSound = document.getElementById("clickSound");
+
+// Event Listeners
+prevBtn.addEventListener("click", playClickSound);
+nextBtn.addEventListener("click", playClickSound);
+
+function playClickSound() {
+    clickSound.play();
+}
+
+// Filip Book Sound JS end

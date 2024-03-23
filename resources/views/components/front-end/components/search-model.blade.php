@@ -76,7 +76,7 @@
         ) {
             // Create an image element
             var image = document.createElement("img");
-            image.src = "{{ asset('book.jpg') }}"; // Set the image source
+            image.src = "{{ asset('front-end/asset/image/book.jpg') }}"; // Set the image source
             image.classList.add("custom-image"); // Add a class to the image element
             
             // Create a div to wrap the image
