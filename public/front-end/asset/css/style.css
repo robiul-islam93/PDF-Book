@@ -550,6 +550,18 @@ i {
 
 /* Flip View Page Is Done start  */
 
+.image-book {
+  display: flex;
+}
+
+.image-book img {
+  flex: 2; /* Equal width for both images */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+
+
+
 .flipbook-container {
   position: relative;
   margin: 0 auto;
@@ -581,13 +593,13 @@ i {
   cursor: pointer;
 }
 #prevPage {
-  height: 60px;
+  height: 70px;
   background: white;
   display: inline-block;
   left: 0;
 }
 #nextPage {
-  height: 60px;
+  height: 70px;
   background: white;
   display: inline-block;
   right: 4%;

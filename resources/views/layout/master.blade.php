@@ -79,46 +79,45 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 
     <script type="text/javascript">
 
-        $(document).ready(function() {
-            var flipbook = $('.flipbook');
-    
-            function loadApp() {
-                // Create the flipbook
-                flipbook.turn({
-                    // Width
-                    width: 603,
-                    // Height
-                    height: 440,
-                    // Elevation
-                    elevation: 50,
-                    // Enable gradients
-                    gradients: true,
-                    // Auto center this flipbook
-                    autoCenter: true,
-                });
-            }
-    
+$(document).ready(function() {
+    var flipbook = $('.flipbook');
 
-
-
-            $('#prevPage').on('click', function() {
-            flipbook.turn('previous');
+    function loadApp() {
+        // Create the flipbook
+        flipbook.turn({
+            // Width
+            width: 603,
+            // Height
+            height: 440,
+            // Elevation
+            elevation: 50,
+            // Enable gradients
+            gradients: true,
+            // Auto center this flipbook
+            autoCenter: true,
+            // Display first two pages
+            page: 2
         });
+    }
 
-        // Event handler for next page button
-        $('#nextPage').on('click', function() {
-            flipbook.turn('next');
-        });
-    
-            yepnope({
-                test : Modernizr.csstransforms,
-                yep: ["{{asset('front-end/turn-js/lib/turn.js')}}"],
-                yep: ["{{asset('front-end/turn-js/lib/turn.js')}}"],
-                nope: ["{{asset('front-end/turn-js/lib/turn.html4.min.js')}}"],
-                both: ["{{asset('front-end/turn-js/css/basic.css')}}"],
-                complete: loadApp
-            });
-        });
+    $('#prevPage').on('click', function() {
+        flipbook.turn('previous');
+    });
+
+    // Event handler for next page button
+    $('#nextPage').on('click', function() {
+        flipbook.turn('next');
+    });
+
+    yepnope({
+        test: Modernizr.csstransforms,
+        yep: ["{{asset('front-end/turn-js/lib/turn.js')}}"],
+        yep: ["{{asset('front-end/turn-js/lib/turn.js')}}"],
+        nope: ["{{asset('front-end/turn-js/lib/turn.html4.min.js')}}"],
+        both: ["{{asset('front-end/turn-js/css/basic.css')}}"],
+        complete: loadApp
+    });
+});
         
     </script>
     

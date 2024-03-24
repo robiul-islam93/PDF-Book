@@ -12,28 +12,28 @@
                 <div class="flipbook">
                     <!-- Your flipbook pages -->
                     <div>
-                        <img src="{{asset('front-end/asset/image/Screenshot_7.png')}}" width="333px" height="541px" alt="">
+                        <img src="{{asset('front-end/asset/image/Screenshot_7.png')}}" alt="">
                     </div>
                     <div>
-                        <img src="{{asset('front-end/asset/image/Screenshot_8.png')}}" width="333px" height="541px" alt="">
+                        <img src="{{asset('front-end/asset/image/Screenshot_8.png')}}" alt="">
                     </div>
                     <div>
-                        <img src="{{asset('front-end/asset/image/Screenshot_8.png')}}" width="333px" height="541px" alt="">
+                        <img src="{{asset('front-end/asset/image/Screenshot_8.png')}}" alt="">
                     </div>
                     <div>
-                        <img src="{{asset('front-end/asset/image/Screenshot_8.png')}}" width="333px" height="541px" alt="">
+                        <img src="{{asset('front-end/asset/image/Screenshot_8.png')}}" alt="">
                     </div>
                     <div>
-                        <img src="{{asset('front-end/asset/image/Screenshot_8.png')}}" width="333px" height="541px" alt="">
+                        <img src="{{asset('front-end/asset/image/Screenshot_8.png')}}" alt="">
                     </div>
                     <div>
-                        <img src="{{asset('front-end/asset/image/Screenshot_8.png')}}" width="333px" height="541px" alt="">
+                        <img src="{{asset('front-end/asset/image/Screenshot_8.png')}}" alt="">
                     </div>
                     <div>
-                        <img src="{{asset('front-end/asset/image/Screenshot_8.png')}}" width="333px" height="541px" alt="">
+                        <img src="{{asset('front-end/asset/image/Screenshot_8.png')}}" alt="">
                     </div>
                     <div>
-                        <img src="{{asset('front-end/asset/image/Screenshot_8.png')}}" width="333px" height="541px" alt="">
+                        <img src="{{asset('front-end/asset/image/Screenshot_8.png')}}" alt="">
                     </div>
                     <!-- Add more pages as needed -->
                 </div>
